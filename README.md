@@ -21,7 +21,7 @@ Want more info? Here's some of the posts we refered to when building these:
 
 2. Clone the repo to your local machine.
 
-3. Download the `pre-commit` & `post-merge` scripts. Enable them in your repo by moving them into the folder `<your_repo>/.git/hooks/`.  These will ensure that meta files stay in sync. It will also alert you if you attempt to commit a >100mb file, which github will reject. It will reject the commit, allowing you to revise it to remove or reduce the size of the offending file(s). 
+3. Download the `pre-commit` & `post-merge` scripts. Enable them in your repo by moving them into the folder `<your_repo>/.git/hooks/`.  These will ensure that meta files stay in sync. It will also alert you if you attempt to commit a >100mb file, which github will reject. It will reject the commit, allowing you to revise it to remove or reduce the size of the offending file(s). **These scripts have to be installed individually on each computer you clone to repo to.** Ensure your teammates have installed these as well.
 
    >If you can't see the `/.git/` folder, make it visible by following [these steps for Windows](https://kb.wisc.edu/page.php?id=27479) or [these steps for Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/).
 
@@ -67,7 +67,7 @@ Want more info? Here's some of the posts we refered to when building these:
 
 4. That's all you need to do, as tracking the appropriate files in lfs is taken care of by the .gitattributes file. If you're already familiar with git, you might consider reading [this intro to git-lfs](https://github.com/git-lfs/git-lfs/wiki/Tutorial), as working with it varies from vanilla git quite a bit.
 
-## Invite everyone else to the repo
+## Invite Teammates
 
 1. Make sure they've all installed git lfs!
 
