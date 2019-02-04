@@ -1,5 +1,5 @@
 # Unity-Git-Config
-We've put together some git configuration files to cover the majority of Unity/Git use cases & prevent your repos from filling up with cruft. 
+We've put together some git configuration files to cover the majority of Unity/Git use cases & identify as many large file types as possible prevent your repos from filling up with cruft. 
 
 # Setup instructions:
 
