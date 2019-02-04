@@ -1,5 +1,10 @@
 # Unity-Git-Config
-We've put together some git configuration files to cover the majority of Unity/Git use cases & identify as many large file types as possible prevent your repos from filling up with cruft. 
+We've put together some git configuration files to cover the majority of Unity/Git use cases & identify as many large file types as possible prevent your repos from filling up with cruft. Want more info? Here's some of the posts we refered to when building these: 
+http://www.gamasutra.com/blogs/TimPettersen/20161206/286981/The_complete_guide_to_Unity__Git.php 
+http://www.edwardthomson.com/blog/git_with_unity.html
+https://riptutorial.com/unity3d/example/7179/setting-up-a-git-repository-for-unity
+https://thoughtbot.com/blog/how-to-git-with-unity
+http://www.jameskeats.com/blogs/post/Unitys-SmartMerge-Meets-SourceTree/ 
 
 # Setup instructions:
 
@@ -14,7 +19,7 @@ We've put together some git configuration files to cover the majority of Unity/G
 4. Edit .gitconfig with a text editor, replacing `<path to UnityYAMLMerge>` with the location of your Unity install's merge tool: 
 On Windows it's usually: `C:\\Program Files\\Unity\\Editor\\Data\\Tools\\UnityYAMLMerge.exe` or `C:\\Program Files (x86)\\Unity\\Editor\\Data\\Tools\\UnityYAMLMerge.exe` (double slashes are necessary as escape characters)
 On Mac it's usually: `/Applications/Unity/Unity.app/Contents/Tools/UnityYAMLMerge`
-Note that these locations can vary if you picked a different install folder during unity install. This merge tool will try to merge or resolve conflicts within .prefab, .scene, and other unity asset files. If it can't do it automatically, your default merge tool will open & you can manually select which changes to include. Always open any merged unity assets & confirm the merge worked before pushing the merged assets. For more info, check this out: https://github.com/anacat/unity-mergetool
+Note that these locations can vary if you picked a different install folder during unity install. This merge tool will try to merge or resolve conflicts within .prefab, .scene, and other unity asset files. If it can't do it automatically, your default merge tool will open & you can manually select which changes to include. Always open any merged unity assets & confirm the merge worked before pushing the merged assets. For more info, check this: https://github.com/anacat/unity-mergetool or this: http://www.jameskeats.com/blogs/post/Unitys-SmartMerge-Meets-SourceTree/ 
 
 5. After editing the .gitconfig, add it & the the rest these files, as the first commit to your new repo.
 
