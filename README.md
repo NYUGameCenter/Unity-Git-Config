@@ -1,15 +1,17 @@
 <div style="align:center"><img src ="https://github.com/NYUGameCenter/Unity-Git-Config/blob/master/NYU_GameCenter_Logo_Formatted_Thin.png"></div>
 
 # Unity Git Config
+- [Setup Instructions](#setup-instructions)
+- [Additional Information](#additional-information)
+
 We've put together some git configuration files to cover the majority of Unity/Git use cases. If you set these up at the start, they should prevent your repos from filling up with cruft. These config files ensure that all large files are tracked by git lfs & that your changes are diff'd appropriately, while the pre-commit/post-merge hooks ensure that meta files stay properly in sync.
 
 This process has 4 phases. Please make sure to complete all 4 before starting work on your project.
-1. Configure Unity for Git
-2. Create & Configure Your Repo
-3. Install GitLFS
-4. Invite Teammates
-
-# Setup Instructions:
+  * [Configure Unity for Git](#configure-unity-for-git)
+  * [Create & Configure Your Repo](#create---configure-your-repo)
+  * [Install GitLFS](#install-gitlfs)
+  * [Invite Teammates](#invite-teammates)
+# Setup Instructions
 
 ## Configure Unity for Git
 
