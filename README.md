@@ -20,7 +20,8 @@ Want more info? Here's some of the posts we refered to when building these:
 2. Clone the repo to your local machine.
 
 3. Download the `pre-commit` & `post-merge` scripts. These will ensure that meta files for gitignored files get ignored properly. Enable them in your repo by moving them into the folder `<your_repo>/.git/hooks`.  
->If you can't see the `/.git/` folder, make it visible by following [these steps for Windows](https://kb.wisc.edu/page.php?id=27479) or [these steps for Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/).
+
+   >If you can't see the `/.git/` folder, make it visible by following [these steps for Windows](https://kb.wisc.edu/page.php?id=27479) or [these steps for Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/).
 
 4. Download the .gitignore, .gitconfig, & .gitattributes files from this into the root of the local repo you just cloned, ie into the folder `<your_repo>/`.
 
@@ -40,19 +41,19 @@ Want more info? Here's some of the posts we refered to when building these:
 
 2. Open the editor settings:
 
-`Edit > Project Settings > Editor`
+   `Edit > Project Settings > Editor`
 
 3. Force visible .meta files (this will ensure script execution order & object references are maintained)
 
-`Version Control / Mode: “Visible Meta Files”`
+   `Version Control / Mode: “Visible Meta Files”`
 
 4. Force text serialization (this will ensure you can merge & properly diff your assets)
 
-`Asset Serialization / Mode: “Force Text”`
+   `Asset Serialization / Mode: “Force Text”`
 
 5. Save changes
 
-`File > Save Project`
+   `File > Save Project`
 
 ## Third: Install GitLFS 
 
