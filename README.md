@@ -1,6 +1,5 @@
 # NYUGameCenter's Unity Git Config
-[logo]: https://avatars3.githubusercontent.com/u/31413266?s=400&u=2d23a27320635fb3069b805c2de527f313a632ee&v=4
-![nyu gamecenter logo][logo]
+
 We've put together some git configuration files to cover the majority of Unity/Git use cases. If you set these up at the start, they should prevent your repos from filling up with cruft. These config files ensure that all large files are tracked by git lfs & that your changes are diff'd appropriately, while the pre-commit/post-merge hooks ensure that meta files stay properly in sync.
 
 Want more info? Here's some of the posts we refered to when building these: 
