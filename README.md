@@ -8,7 +8,7 @@ We've put together some git configuration files to cover the majority of Unity/G
 
 This process has 4 phases. Please make sure to complete all 4 before starting work on your project.
   * [Configure Unity for Git](#configure-unity-for-git)
-  * [Create & Configure Your Repo](#create---configure-your-repo)
+  * [Create and Configure Your Repo](#create-and-configure-your-repo)
   * [Install GitLFS](#install-gitlfs)
   * [Invite Teammates](#invite-teammates)
 # Setup Instructions
@@ -33,7 +33,7 @@ This process has 4 phases. Please make sure to complete all 4 before starting wo
 
    `File > Save Project`
 
-## Create & Configure Your Repo 
+## Create and Configure Your Repo 
 
 1. Create a new github repo with the same name as your unity project. Don't select the default unity .gitignore, we'll be importing our own a the subsequent step.
 
