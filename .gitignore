@@ -15,13 +15,19 @@
 # Visual Studio cache directory
 .vs/
 
-# User specific
+# Rider
+# Rider auto-generates .iml files, and contentModel.xml
+**/.idea/**/*.iml
+**/.idea/**/contentModel.xml
+**/.idea/**/modules.xml
+
+# Rider User specific
 **/.idea/**/workspace.xml
 **/.idea/**/tasks.xml
 **/.idea/shelf/*
 **/.idea/dictionaries
 
-# Sensitive or high-churn files
+# Rider Sensitive or high-churn files
 **/.idea/**/dataSources/
 **/.idea/**/dataSources.ids
 **/.idea/**/dataSources.xml
@@ -29,11 +35,12 @@
 **/.idea/**/sqlDataSources.xml
 **/.idea/**/dynamic.xml
 
-# Rider
-# Rider auto-generates .iml files, and contentModel.xml
-**/.idea/**/*.iml
-**/.idea/**/contentModel.xml
-**/.idea/**/modules.xml
+#maya intermediate files
+**/incrementalSave/
+
+# wwise intermediate files
+**/.cache/
+*.akd
 
 # Gradle cache directory
 .gradle/
@@ -92,4 +99,5 @@ crashlytics-build.properties
 Icon?
 Thumbs.db
 Desktop.ini
-.DS_Store
+ehthumbs.db
+Local/*
