@@ -1,0 +1,39 @@
+#!/bin/sh
+# 
+# Pre-commit hook script for Unity to check that every folder that just has marked to be ignored in .gitignore 
+# has an entry for its meta file to be ignored too. Based on this: https://github.com/kayy/git-pre-commit-hook-unity-assets
+# 
+# After cloning your repo, put this file into directory <your_repo>/.git/hooks. To disable it remove it from there.
+
+
+# check if staged files contain .gitignore
+if [ ! `git diff --name-only --cached | grep "\.gitignore"` ]; then
+	# avoid expensive diff actions if there is no change in .gitignore
+	exit 0
+fi
+
+# new lines have the format {+xxxxx+}
+raw_diff_output=`git diff --cached --word-diff=plain .gitignore | egrep  "\{\+.*\+\}"`
+
+# prepare two strings: on for directories and one for meta files
+for raw_entry in $raw_diff_output; do
+	# strip leading and trailing separator "{+" and "+}"
+	e=${raw_entry:2:$((${#raw_entry}-4))}
+	is_meta=$((`echo $e | egrep ".*meta" | wc -l`))
+	if [ $is_meta -eq 0 ]; then
+		diff_output_dirs="${diff_output_dirs} ${e}"
+	else
+		diff_output_metas="${diff_output_metas} ${e}"
+	fi
+done
+
+# iterate over directories and check if there is an entry for the appropriate meta file
+for i in $diff_output_dirs; do 
+	# meta file entries are often without directory, so strip the path
+	dir_name=`echo $i | egrep -o "/[^/]+$" | cut -d / -f 2`
+	has_meta_ignore=$((`echo $diff_output_metas | grep "$dir_name.meta" | wc -l`))
+	if [ ${has_meta_ignore} -eq 0 ]; then
+		echo "$dir_name found in .gitignore but not the corresponding meta file! Please add ${dir_name}.meta to .gitignore"
+		exit 1
+	fi
+done
