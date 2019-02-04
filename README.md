@@ -19,7 +19,7 @@ Want more info? Here's some of the posts we refered to when building these:
 
 2. Clone the repo to your local machine.
 
-3. Download the `pre-commit` & `post-merge` scripts. These will ensure that meta files for gitignored files get ignored properly. Enable them in your repo by moving them into the folder `<your_repo>/.git/hooks`. 
+3. Download the `pre-commit` & `post-merge` scripts. These will ensure that meta files for gitignored files get ignored properly. Enable them in your repo by moving them into the folder `<your_repo>/.git/hooks`.  If you can't see the `/.git/` folder, make it visible by following these steps for Windows: https://kb.wisc.edu/page.php?id=27479 or these for Mac: https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/ 
 
 4. Download the .gitignore, .gitconfig, & .gitattributes files from this into the root of the local repo you just cloned, ie into the folder `<your_repo>/`.
 
@@ -57,6 +57,8 @@ Note that these locations can vary if you picked a different install folder duri
 2. Open a command prompt, terminal, or gitbash window. 
 
 3. Navigate to the folder containing your git repository & execute: `git lfs install`
+
+4. That's all you need to do, as tracking the appropriate files in lfs is taken care of by the .gitattributes file. If you're already familiar with git, you might consider reading this intro to git-lfs, as working with it varies from vanilla git quite a bit: https://github.com/git-lfs/git-lfs/wiki/Tutorial
 
 ## Fourth: Invite everyone else to the repo
 
