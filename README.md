@@ -19,7 +19,7 @@ Want more info? Here's some of the posts we refered to when building these:
 
 2. Clone the repo to your local machine.
 
-3. Download the `pre-commit` & `post-merge` scripts. These will ensure that meta files for gitignored files get ignored properly. Enable them in your repo by moving them into the folder `<your_repo>/.git/hooks/`.  
+3. Download the `pre-commit` & `post-merge` scripts. Enable them in your repo by moving them into the folder `<your_repo>/.git/hooks/`.  These will ensure that meta files for gitignored files get ignored properly. 
 
    >If you can't see the `/.git/` folder, make it visible by following [these steps for Windows](https://kb.wisc.edu/page.php?id=27479) or [these steps for Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/).
 
