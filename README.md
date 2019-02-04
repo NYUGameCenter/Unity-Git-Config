@@ -15,11 +15,31 @@ Want more info? Here's some of the posts we refered to when building these:
 
 # Setup Instructions:
 
+## Configure Unity for Git
+
+1. Create a new unity project.
+
+2. Open the editor settings:
+
+   `Edit > Project Settings > Editor`
+
+3. Force visible .meta files (this will ensure script execution order & object references are maintained)
+
+   `Version Control / Mode: “Visible Meta Files”`
+
+4. Force text serialization (this will ensure you can merge & properly diff your assets)
+
+   `Asset Serialization / Mode: “Force Text”`
+
+5. Save changes
+
+   `File > Save Project`
+
 ## Create & Configure Your Repo 
 
-1. Create a new github repo. Don't select the default unity .gitignore, we'll be importing our own a the subsequent step.
+1. Create a new github repo with the same name as your unity project. Don't select the default unity .gitignore, we'll be importing our own a the subsequent step.
 
-2. Clone the repo to your local machine.
+2. Clone the repo to the unity project folder you created in "Configure Unity for Git".
 
 3. Download the [pre-commit](https://github.com/NYUGameCenter/Unity-Git-Config/blob/master/pre-commit) & [post-merge](https://github.com/NYUGameCenter/Unity-Git-Config/blob/master/post-merge) scripts. Enable them in your repo by moving them into the folder `<your_repo>/.git/hooks/`.  These will ensure that meta files stay in sync. It will also alert you if you attempt to commit a >100mb file, which github will reject. It will reject the commit, allowing you to revise it to remove or reduce the size of the offending file(s). **These scripts have to be installed individually on each computer you clone to repo to.** Ensure your teammates have installed these as well.
 
@@ -37,25 +57,7 @@ Want more info? Here's some of the posts we refered to when building these:
 
 6. Commit these changes to your new repo & push.
 
-## Configure Unity for Git
 
-1. Create a new unity project in the folder you cloned above.
-
-2. Open the editor settings:
-
-   `Edit > Project Settings > Editor`
-
-3. Force visible .meta files (this will ensure script execution order & object references are maintained)
-
-   `Version Control / Mode: “Visible Meta Files”`
-
-4. Force text serialization (this will ensure you can merge & properly diff your assets)
-
-   `Asset Serialization / Mode: “Force Text”`
-
-5. Save changes
-
-   `File > Save Project`
 
 ## Install GitLFS 
 
