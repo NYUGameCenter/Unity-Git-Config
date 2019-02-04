@@ -3,15 +3,11 @@
 # Unity Git Config
 We've put together some git configuration files to cover the majority of Unity/Git use cases. If you set these up at the start, they should prevent your repos from filling up with cruft. These config files ensure that all large files are tracked by git lfs & that your changes are diff'd appropriately, while the pre-commit/post-merge hooks ensure that meta files stay properly in sync.
 
-Want more info? Here's some of the posts we refered to when building these: 
-  * http://www.gamasutra.com/blogs/TimPettersen/20161206/286981/The_complete_guide_to_Unity__Git.php 
-  * http://www.edwardthomson.com/blog/git_with_unity.html
-  * https://riptutorial.com/unity3d/example/7179/setting-up-a-git-repository-for-unity
-  * https://thoughtbot.com/blog/how-to-git-with-unity
-  * http://teaclipper.co.uk/2016/11/11/the-perfect-unity-git-repo/
-  * http://www.jameskeats.com/blogs/post/Unitys-SmartMerge-Meets-SourceTree/
-  * https://nagachiang.github.io/tutorial-setup-smart-merge-for-unity-assets-with-git/
-  * https://www.forrestthewoods.com/blog/managing_meta_files_in_unity/
+This process has 4 phases. Please make sure to complete all 4 before starting work on your project.
+1. Configure Unity for Git
+2. Create & Configure Your Repo
+3. Install GitLFS
+4. Invite Teammates
 
 # Setup Instructions:
 
@@ -55,10 +51,10 @@ Want more info? Here's some of the posts we refered to when building these:
    This merge tool will try to merge or resolve conflicts within .prefab, .scene, and other unity asset files. If it can't do it automatically, your default merge tool will open & you can manually select which changes to include.  
    **Always open any merged unity assets & confirm the merge worked before pushing the merged assets.** For more info, check [this git hub post](https://github.com/anacat/unity-mergetool) or [this blog post](http://www.jameskeats.com/blogs/post/Unitys-SmartMerge-Meets-SourceTree/).  
 
-6. Commit these changes to your new repo & push. Your new project should look like this on github (keep scrolling, you're not done yet):
+6. Commit these changes to your new repo & push. Your new project should look like this on github 
 
 <div style="align:center"><img src ="https://github.com/NYUGameCenter/Unity-Git-Config/blob/master/testproject.jpg"></div>
-
+(keep scrolling, you're not done yet)
 
 ## Install GitLFS 
 
@@ -77,3 +73,15 @@ Want more info? Here's some of the posts we refered to when building these:
 2. Add them to your repo.
 
 3. Help them clone the repo, as well as download & copy the `pre-commit` & `post-merge` scripts into `/.git/hooks/` (step 3 of Create & Configure Your Repo, above).
+
+# Additional Information
+
+Want more info? Here's some of the posts we refered to when building these: 
+  * http://www.gamasutra.com/blogs/TimPettersen/20161206/286981/The_complete_guide_to_Unity__Git.php 
+  * http://www.edwardthomson.com/blog/git_with_unity.html
+  * https://riptutorial.com/unity3d/example/7179/setting-up-a-git-repository-for-unity
+  * https://thoughtbot.com/blog/how-to-git-with-unity
+  * http://teaclipper.co.uk/2016/11/11/the-perfect-unity-git-repo/
+  * http://www.jameskeats.com/blogs/post/Unitys-SmartMerge-Meets-SourceTree/
+  * https://nagachiang.github.io/tutorial-setup-smart-merge-for-unity-assets-with-git/
+  * https://www.forrestthewoods.com/blog/managing_meta_files_in_unity/
