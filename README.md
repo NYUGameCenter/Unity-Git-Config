@@ -17,7 +17,7 @@ Want more info? Here's some of the posts we refered to when building these:
 
 ## Create & Configure Your Repo 
 
-1. Create a new github repo.
+1. Create a new github repo. Don't select the default unity .gitignore, we'll be importing our own a the subsequent step.
 
 2. Clone the repo to your local machine.
 
