@@ -1,0 +1,131 @@
+# Ensure text mode for unity scripts & shaders, c-sharp diffing
+*.cs diff=csharp text
+*.cginc text
+*.shader text
+
+# Use YAML Merge for Unity assets
+*.mat merge=unityyamlmerge eol=lf
+*.anim merge=unityyamlmerge eol=lf
+*.unity merge=unityyamlmerge eol=lf
+*.prefab merge=unityyamlmerge eol=lf
+*.physicsMaterial2D merge=unityyamlmerge eol=lf
+*.physicsMaterial merge=unityyamlmerge eol=lf
+*.meta merge=unityyamlmerge eol=lf
+*.controller merge=unityyamlmerge eol=lf
+*.asset merge=unityyamlmerge text=auto
+
+# gitLFS Config
+
+# LFS Image Files
+
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.bmp filter=lfs diff=lfs merge=lfs -text
+*.exr  filter=lfs diff=lfs merge=lfs -text 
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.ai filter=lfs diff=lfs merge=lfs -text
+*.indd filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+
+# LFS Audio Files
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.aif filter=lfs diff=lfs merge=lfs -text
+*.aiff filter=lfs diff=lfs merge=lfs -text
+*.flac filter=lfs diff=lfs merge=lfs -text
+*.opus filter=lfs diff=lfs merge=lfs -text
+
+# LFS Meshes
+*.FBX filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+*.lxo filter=lfs diff=lfs merge=lfs -text
+*.
+
+# LFS Symbol Files
+*.pdb filter=lfs diff=lfs merge=lfs -text
+
+# LFS Substance Files
+*.sbs filter=lfs diff=lfs merge=lfs -text
+*.sbsar filter=lfs diff=lfs merge=lfs -text
+*.sbsprs filter=lfs diff=lfs merge=lfs -text
+*.SBS filter=lfs diff=lfs merge=lfs -text
+*.SBSAR filter=lfs diff=lfs merge=lfs -text
+*.SBSPRS filter=lfs diff=lfs merge=lfs -text
+
+# LFS Music Projects
+# reason
+*.reason filter=lfs diff=lfs merge=lfs -text
+*.rns filter=lfs diff=lfs merge=lfs -text
+# ableton
+*.als filter=lfs diff=lfs merge=lfs -text 
+*.alp filter=lfs diff=lfs merge=lfs -text
+*.ask filter=lfs diff=lfs merge=lfs -text
+*.adg filter=lfs diff=lfs merge=lfs -text
+*.adv filter=lfs diff=lfs merge=lfs -text
+*.alc filter=lfs diff=lfs merge=lfs -text
+*.agr filter=lfs diff=lfs merge=lfs -text
+*.ams filter=lfs diff=lfs merge=lfs -text
+*.amxd filter=lfs diff=lfs merge=lfs -text
+# logic
+*.lxo filter=lfs diff=lfs merge=lfs -text
+*.logicx filter=lfs diff=lfs merge=lfs -text
+*.logic filter=lfs diff=lfs merge=lfs -text
+
+
+# LFS Libraries
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.a filter=lfs diff=lfs merge=lfs -text
+
+# LFS Builds & Utilities
+*.apk filter=lfs diff=lfs merge=lfs -text
+*.dmg filter=lfs diff=lfs merge=lfs -text
+*.ipa filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+
+
+# LFS Archives
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.zipx filter=lfs diff=lfs merge=lfs -text
+*.s7z filter=lfs diff=lfs merge=lfs -text
+*.jar filter=lfs diff=lfs merge=lfs -text
+*.7z filter=lfs diff=lfs merge=lfs -text
+*.zz filter=lfs diff=lfs merge=lfs -text
+*.rar filter=lfs diff=lfs merge=lfs -text
+*.ace filter=lfs diff=lfs merge=lfs -text
+*.sitx filter=lfs diff=lfs merge=lfs -text
+*.unitypackage filter=lfs diff=lfs merge=lfs -text
+*.ar filter=lfs diff=lfs merge=lfs -text
+*.iso filter=lfs diff=lfs merge=lfs -text
+*.tar filter=lfs diff=lfs merge=lfs -text
+*.gz filter=lfs diff=lfs merge=lfs -text
+*.bz2 filter=lfs diff=lfs merge=lfs -text
+*.lz filter=lfs diff=lfs merge=lfs -text
+*.lzma filter=lfs diff=lfs merge=lfs -text
+*.lzh filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.tgz filter=lfs diff=lfs merge=lfs -text
+*.tar.Z filter=lfs diff=lfs merge=lfs -text
+*.tar.bz2 filter=lfs diff=lfs merge=lfs -text
+*.tar.lzma filter=lfs diff=lfs merge=lfs -text
+*.tlz filter=lfs diff=lfs merge=lfs -text
+*.tar.xz filter=lfs diff=lfs merge=lfs -text
+*.txz filter=lfs diff=lfs merge=lfs -text
+*.cab filter=lfs diff=lfs merge=lfs -text
+
+# LFS Fonts
+*.ttf filter=lfs diff=lfs merge=lfs -text
+*.ttc filter=lfs diff=lfs merge=lfs -text
+*.ufo filter=lfs diff=lfs merge=lfs -text
+*.otf filter=lfs diff=lfs merge=lfs -text
+*.fnt filter=lfs diff=lfs merge=lfs -text
+*.fon filter=lfs diff=lfs merge=lfs -text
+*.fot filter=lfs diff=lfs merge=lfs -text
+*.woff filter=lfs diff=lfs merge=lfs -text
+*.woff2 filter=lfs diff=lfs merge=lfs -text
