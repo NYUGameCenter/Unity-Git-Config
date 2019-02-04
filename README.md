@@ -13,9 +13,9 @@ Want more info? Here's some of the posts we refered to when building these:
   * https://nagachiang.github.io/tutorial-setup-smart-merge-for-unity-assets-with-git/
   * https://www.forrestthewoods.com/blog/managing_meta_files_in_unity/
 
-# Setup instructions:
+# Setup Instructions:
 
-## First: Create & Configure Your Repo 
+## Create & Configure Your Repo 
 
 1. Create a new github repo.
 
@@ -37,7 +37,7 @@ Want more info? Here's some of the posts we refered to when building these:
 
 6. Commit these changes to your new repo & push.
 
-## Second: Configure Unity for Git
+## Configure Unity for Git
 
 1. Create a new unity project in the folder you cloned above.
 
@@ -57,7 +57,7 @@ Want more info? Here's some of the posts we refered to when building these:
 
    `File > Save Project`
 
-## Third: Install GitLFS 
+## Install GitLFS 
 
 1. Download & install from https://git-lfs.github.com/
 
@@ -67,10 +67,10 @@ Want more info? Here's some of the posts we refered to when building these:
 
 4. That's all you need to do, as tracking the appropriate files in lfs is taken care of by the .gitattributes file. If you're already familiar with git, you might consider reading [this intro to git-lfs](https://github.com/git-lfs/git-lfs/wiki/Tutorial), as working with it varies from vanilla git quite a bit.
 
-## Fourth: Invite everyone else to the repo
+## Invite everyone else to the repo
 
 1. Make sure they've all installed git lfs!
 
 2. Add them to your repo.
 
-3. Help them clone the repo, as well as download & copy the `pre-commit` & `post-merge` scripts into `/.git/hooks/`.
+3. Help them clone the repo, as well as download & copy the `pre-commit` & `post-merge` scripts into `/.git/hooks/` (step 3 of Configure & Create Your Repo, above).
