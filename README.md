@@ -20,7 +20,7 @@ Want more info? Here's some of the posts we refered to when building these:
 2. Clone the repo to your local machine.
 
 3. Download the `pre-commit` & `post-merge` scripts. These will ensure that meta files for gitignored files get ignored properly. Enable them in your repo by moving them into the folder `<your_repo>/.git/hooks`.  
->If you can't see the `/.git/` folder, make it visible by following these steps for Windows: https://kb.wisc.edu/page.php?id=27479 or these for Mac: https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/ 
+>If you can't see the `/.git/` folder, make it visible by following [these steps for Windows](https://kb.wisc.edu/page.php?id=27479) or [these steps for Mac](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/).
 
 4. Download the .gitignore, .gitconfig, & .gitattributes files from this into the root of the local repo you just cloned, ie into the folder `<your_repo>/`.
 
@@ -29,7 +29,8 @@ Want more info? Here's some of the posts we refered to when building these:
 
 >On Mac it's usually: `/Applications/Unity/Unity.app/Contents/Tools/UnityYAMLMerge`
 
-This merge tool will try to merge or resolve conflicts within .prefab, .scene, and other unity asset files. If it can't do it automatically, your default merge tool will open & you can manually select which changes to include. Always open any merged unity assets & confirm the merge worked before pushing the merged assets. For more info, check this: https://github.com/anacat/unity-mergetool or this: http://www.jameskeats.com/blogs/post/Unitys-SmartMerge-Meets-SourceTree/ 
+This merge tool will try to merge or resolve conflicts within .prefab, .scene, and other unity asset files. If it can't do it automatically, your default merge tool will open & you can manually select which changes to include. 
+*Always open any merged unity assets & confirm the merge worked before pushing the merged assets.* For more info, check [this git hub post](https://github.com/anacat/unity-mergetool) or [this blog post](http://www.jameskeats.com/blogs/post/Unitys-SmartMerge-Meets-SourceTree/).
 
 6. Commit these changes to your new repo & push.
 
@@ -61,10 +62,12 @@ This merge tool will try to merge or resolve conflicts within .prefab, .scene, a
 
 3. Navigate to the folder containing your git repository & execute: `git lfs install`
 
-4. That's all you need to do, as tracking the appropriate files in lfs is taken care of by the .gitattributes file. If you're already familiar with git, you might consider reading this intro to git-lfs, as working with it varies from vanilla git quite a bit: https://github.com/git-lfs/git-lfs/wiki/Tutorial
+4. That's all you need to do, as tracking the appropriate files in lfs is taken care of by the .gitattributes file. If you're already familiar with git, you might consider reading [this intro to git-lfs](https://github.com/git-lfs/git-lfs/wiki/Tutorial), as working with it varies from vanilla git quite a bit.
 
 ## Fourth: Invite everyone else to the repo
 
 1. Make sure they've all installed git lfs!
 
 2. Add them to your repo.
+
+3. Help them clone the repo.
