@@ -1,25 +1,24 @@
 # Unity-Git-Config
 Here is where we maintain exemplar git configuration files for Unity3d projects
 
-Setup instructions:
+# Setup instructions:
 
-# First
-Create a repo on github & configure it
+## First: Create & Configure Your Repo 
 
-1. Clone the repo to your local machine.
+1. Create a new github repo.
 
-2. Download the .gitignore, .gitconfig, & .gitattributes files from this into the local repo you just cloned.
+2. Clone the repo to your local machine.
 
-3. Edit .gitconfig with a text editor, replacing `<path to UnityYAMLMerge>` with the location of your Unity install's merge tool: 
+3. Download the .gitignore, .gitconfig, & .gitattributes files from this into the local repo you just cloned.
+
+4. Edit .gitconfig with a text editor, replacing `<path to UnityYAMLMerge>` with the location of your Unity install's merge tool: 
 On Windows it's usually: `C:\Program Files\Unity\Editor\Data\Tools\UnityYAMLMerge.exe` or `C:\Program Files (x86)\Unity\Editor\Data\Tools\UnityYAMLMerge.exe`
 On Mac it's usually: `/Applications/Unity/Unity.app/Contents/Tools/UnityYAMLMerge`
-
 Note that these locations can vary if you picked a different install folder during unity install.
 
-4. After editing the .gitconfig, add it, & the the rest these files, as the first commit to your new repo.
+5. After editing the .gitconfig, add it, & the the rest these files, as the first commit to your new repo.
 
-# Second
-Properly configure Unity for git
+## Second: Configure Unity for Git
 
 1. Open the editor settings:
 `Edit > Project Settings > Editor`
@@ -33,10 +32,9 @@ Properly configure Unity for git
 4. Save changes
 `File > Save Project`
 
-# Third
-Install & configure gitlfs: https://git-lfs.github.com/
+## Third: Install GitLFS 
 
-1. Download & install from above link
+1. Download & install from above link: https://git-lfs.github.com/
 
 2. Open a command prompt, terminal, or gitbash window. 
 
