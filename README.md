@@ -78,7 +78,7 @@ This process has 4 phases. Please make sure to complete all 4 before starting wo
 
 # Additional Information
 
-Want more info? Here's some of the posts we refered to when building these: 
+Want more info? Here's some of the docs & posts we read when building these: 
   * http://www.gamasutra.com/blogs/TimPettersen/20161206/286981/The_complete_guide_to_Unity__Git.php 
   * http://www.edwardthomson.com/blog/git_with_unity.html
   * https://riptutorial.com/unity3d/example/7179/setting-up-a-git-repository-for-unity
