@@ -66,7 +66,9 @@ sysinfo.txt
 
 # Builds
 *.apk
+*.apk.meta
 *.unitypackage
+*.unitypackage.meta
 
 # Crashlytics generated file
 crashlytics-build.properties
@@ -75,8 +77,11 @@ crashlytics-build.properties
 *.reapeaks
 *.reapeaks.meta
 *.pk
+*.pk.meta
 *.pkf
+*.pkf.meta
 *.asd
+*.asd.meta
 
 # OS generated
 .DS_Store
