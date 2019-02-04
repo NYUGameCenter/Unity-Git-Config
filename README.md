@@ -73,4 +73,4 @@ Want more info? Here's some of the posts we refered to when building these:
 
 2. Add them to your repo.
 
-3. Help them clone the repo, as well as download & copy the `pre-commit` & `post-merge` scripts into `/.git/hooks/` (step 3 of Configure & Create Your Repo, above).
+3. Help them clone the repo, as well as download & copy the `pre-commit` & `post-merge` scripts into `/.git/hooks/` (step 3 of Create & Configure Your Repo, above).
