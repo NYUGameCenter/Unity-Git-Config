@@ -76,6 +76,7 @@ crashlytics-build.properties
 *.reapeaks.meta
 *.pk
 *.pkf
+*.asd
 
 # OS generated
 .DS_Store
