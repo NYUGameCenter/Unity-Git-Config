@@ -56,6 +56,8 @@ Note that these locations can vary if you picked a different install folder duri
 
 3. Navigate to the folder containing your git repository & execute: `git lfs install`
 
-## Fourth: 
+## Fourth: Invite everyone else to the repo
 
-# That's it!
+1. Make sure they've all installed git lfs!
+
+2. Add them to your repo.
