@@ -8,6 +8,7 @@ Want more info? Here's some of the posts we refered to when building these:
   * https://thoughtbot.com/blog/how-to-git-with-unity
   * http://www.jameskeats.com/blogs/post/Unitys-SmartMerge-Meets-SourceTree/
   * https://nagachiang.github.io/tutorial-setup-smart-merge-for-unity-assets-with-git/
+  * https://www.forrestthewoods.com/blog/managing_meta_files_in_unity/
 
 # Setup instructions:
 
