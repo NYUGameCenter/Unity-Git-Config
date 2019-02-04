@@ -1,5 +1,5 @@
 # Unity-Git-Config
-We've put together some git configuration files to cover the majority of Unity/Git use cases & identify as many large file types as possible prevent your repos from filling up with cruft. 
+We've put together some git configuration files to cover the majority of Unity/Git use cases. If you set these up at the start, they should prevent your repos from filling up with cruft. These scripts & config files ensure that all large files are tracked by git lfs, and the pre-commit/post-merge hooks ensure that meta files stay properly in sync.
 
 Want more info? Here's some of the posts we refered to when building these: 
   * http://www.gamasutra.com/blogs/TimPettersen/20161206/286981/The_complete_guide_to_Unity__Git.php 
