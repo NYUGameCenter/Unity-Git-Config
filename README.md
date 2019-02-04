@@ -21,15 +21,19 @@ Note that these locations can vary if you picked a different install folder duri
 ## Second: Configure Unity for Git
 
 1. Open the editor settings:
+
 `Edit > Project Settings > Editor`
 
 2. Force visible .meta files (this will ensure script execution order & object references are maintained)
+
 `Version Control / Mode: “Visible Meta Files”`
 
 3. Force text serialization (this will ensure you can merge & properly diff your assets)
+
 `Asset Serialization / Mode: “Force Text”`
 
 4. Save changes
+
 `File > Save Project`
 
 ## Third: Install GitLFS 
