@@ -2,6 +2,7 @@
 We've put together some git configuration files to cover the majority of Unity/Git use cases & identify as many large file types as possible prevent your repos from filling up with cruft. 
 
 Want more info? Here's some of the posts we refered to when building these: 
+  * https://nagachiang.github.io/tutorial-setup-smart-merge-for-unity-assets-with-git/
   * http://www.gamasutra.com/blogs/TimPettersen/20161206/286981/The_complete_guide_to_Unity__Git.php 
   * http://www.edwardthomson.com/blog/git_with_unity.html
   * https://riptutorial.com/unity3d/example/7179/setting-up-a-git-repository-for-unity
