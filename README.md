@@ -1,4 +1,4 @@
-<div style="text-align:center"><img src ="https://github.com/NYUGameCenter/Unity-Git-Config/blob/master/NYU_GameCenter_Logo_Formatted_Thin.png"></div>
+<div style="align:center"><img src ="https://github.com/NYUGameCenter/Unity-Git-Config/blob/master/NYU_GameCenter_Logo_Formatted_Thin.png"></div>
 
 # Unity Git Config
 We've put together some git configuration files to cover the majority of Unity/Git use cases. If you set these up at the start, they should prevent your repos from filling up with cruft. These config files ensure that all large files are tracked by git lfs & that your changes are diff'd appropriately, while the pre-commit/post-merge hooks ensure that meta files stay properly in sync.
@@ -57,7 +57,7 @@ Want more info? Here's some of the posts we refered to when building these:
 
 6. Commit these changes to your new repo & push. Your new project should look like this on github:
 
-<div style="text-align:center"><img src ="https://github.com/NYUGameCenter/Unity-Git-Config/blob/master/testproject.png"></div>
+<div style="align:center"><img src ="https://github.com/NYUGameCenter/Unity-Git-Config/blob/master/testproject.jpg"></div>
 
 
 ## Install GitLFS 
