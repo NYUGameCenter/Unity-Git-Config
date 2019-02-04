@@ -56,7 +56,7 @@ This merge tool will try to merge or resolve conflicts within .prefab, .scene, a
 
 ## Third: Install GitLFS 
 
-1. Download & install from above link: https://git-lfs.github.com/
+1. Download & install from https://git-lfs.github.com/
 
 2. Open a command prompt, terminal, or gitbash window. 
 
