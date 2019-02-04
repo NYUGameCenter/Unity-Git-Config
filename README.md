@@ -6,6 +6,7 @@ Want more info? Here's some of the posts we refered to when building these:
   * http://www.edwardthomson.com/blog/git_with_unity.html
   * https://riptutorial.com/unity3d/example/7179/setting-up-a-git-repository-for-unity
   * https://thoughtbot.com/blog/how-to-git-with-unity
+  * http://teaclipper.co.uk/2016/11/11/the-perfect-unity-git-repo/
   * http://www.jameskeats.com/blogs/post/Unitys-SmartMerge-Meets-SourceTree/
   * https://nagachiang.github.io/tutorial-setup-smart-merge-for-unity-assets-with-git/
   * https://www.forrestthewoods.com/blog/managing_meta_files_in_unity/
