@@ -16,14 +16,16 @@ Want more info? Here's some of the posts we refered to when building these:
 
 2. Clone the repo to your local machine.
 
-3. Download the .gitignore, .gitconfig, & .gitattributes files from this into the local repo you just cloned.
+3. Download the `pre-commit` & `post-merge` scripts. These will ensure that meta files for gitignored files get ignored properly. Enable them in your repo by moving them into the folder `<your_repo>/.git/hooks`. 
 
-4. Edit .gitconfig with a text editor, replacing `<path to UnityYAMLMerge>` with the location of your Unity install's merge tool: 
+4. Download the .gitignore, .gitconfig, & .gitattributes files from this into the root of the local repo you just cloned, ie into the folder `<your_repo>/`.
+
+5. Edit .gitconfig with a text editor, replacing `<path to UnityYAMLMerge>` with the location of your Unity install's merge tool: 
 On Windows it's usually: `C:\\Program Files\\Unity\\Editor\\Data\\Tools\\UnityYAMLMerge.exe` or `C:\\Program Files (x86)\\Unity\\Editor\\Data\\Tools\\UnityYAMLMerge.exe` (double slashes are necessary as escape characters)
 On Mac it's usually: `/Applications/Unity/Unity.app/Contents/Tools/UnityYAMLMerge`
 Note that these locations can vary if you picked a different install folder during unity install. This merge tool will try to merge or resolve conflicts within .prefab, .scene, and other unity asset files. If it can't do it automatically, your default merge tool will open & you can manually select which changes to include. Always open any merged unity assets & confirm the merge worked before pushing the merged assets. For more info, check this: https://github.com/anacat/unity-mergetool or this: http://www.jameskeats.com/blogs/post/Unitys-SmartMerge-Meets-SourceTree/ 
 
-5. After editing the .gitconfig, add it & the the rest these files, as the first commit to your new repo.
+6. Commit these changes to your new repo & push.
 
 ## Second: Configure Unity for Git
 
@@ -50,5 +52,7 @@ Note that these locations can vary if you picked a different install folder duri
 2. Open a command prompt, terminal, or gitbash window. 
 
 3. Navigate to the folder containing your git repository & execute: `git lfs install`
+
+## Fourth: 
 
 # That's it!
