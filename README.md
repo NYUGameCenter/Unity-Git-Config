@@ -4,13 +4,20 @@ Here is where we maintain exemplar git configuration files for Unity3d projects
 Setup instructions:
 
 # First
-Create a repo on github
+Create a repo on github & configure it
 
 Clone the repo to your local machine.
 
-Download the .gitignore & .gitattributes files from this into the local repo you just cloned.
+Download the .gitignore, .gitconfig, & .gitattributes files from this into the local repo you just cloned.
 
-Add these two files as the first commit to your new repo.
+Edit .gitconfig with a text editor, replacing '<path to UnityYAMLMerge>' with the location of your Unity install's merge tool: 
+On Windows it's usually: C:\Program Files\Unity\Editor\Data\Tools\UnityYAMLMerge.exe or C:\Program Files (x86)\Unity\Editor\Data\Tools\UnityYAMLMerge.exe
+On Mac it's usually:
+/Applications/Unity/Unity.app/Contents/Tools/UnityYAMLMerge
+
+Note that these locations can vary if you picked a different install folder during unity install.
+
+After editing the .gitconfig, add it, & the the rest these files, as the first commit to your new repo.
 
 # Second
 Properly configure Unity for git
