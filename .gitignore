@@ -16,24 +16,8 @@
 .vs/
 
 # Rider
-# Rider auto-generates .iml files, and contentModel.xml
-**/.idea/**/*.iml
-**/.idea/**/contentModel.xml
-**/.idea/**/modules.xml
-
-# Rider User specific
-**/.idea/**/workspace.xml
-**/.idea/**/tasks.xml
-**/.idea/shelf/*
-**/.idea/dictionaries
-
-# Rider Sensitive or high-churn files
-**/.idea/**/dataSources/
-**/.idea/**/dataSources.ids
-**/.idea/**/dataSources.xml
-**/.idea/**/dataSources.local.xml
-**/.idea/**/sqlDataSources.xml
-**/.idea/**/dynamic.xml
+**/.idea/**
+.idea/**
 
 #maya intermediate files
 **/incrementalSave/
@@ -41,6 +25,17 @@
 # wwise intermediate files
 **/.cache/
 *.akd
+
+# fmod autogen files
+fmod.log
+fmod_editor.log
+/Assets/FMODStudioCache.asset
+/Assets/FMODStudioCache.asset.meta
+/Assets/Resources/FMODStudioSettings.asset
+/Assets/Resources/FMODStudioSettings.asset.meta 
+**/.cache/*
+**/.restore/*
+**/.user/*
 
 # Gradle cache directory
 .gradle/
@@ -62,6 +57,10 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*Resharper*
+*ReSharper*
+*.orig
+*.orig.*
 
 # Unity3D generated meta files
 *.pidb.meta
