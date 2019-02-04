@@ -1,5 +1,5 @@
 # Unity-Git-Config
-Here is where we maintain exemplar git configuration files for Unity3d projects
+We've put together some git configuration files to cover the majority of Unity/Git use cases & prevent your repos from filling up with cruft. 
 
 # Setup instructions:
 
