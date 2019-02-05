@@ -12,6 +12,14 @@ This process has 4 phases. Please make sure to complete all 4 before starting wo
   2. [Create and Configure Your Repo](#create-and-configure-your-repo)
   3. [Install GitLFS](#install-gitlfs)
   4. [Invite Teammates](#invite-teammates)
+
+# Prerequisites
+
+Mac: Git installed either through Xcode command line tools, or from here: http://git-scm.com/download/mac
+Windows: Git installed using GitForWindows: https://gitforwindows.org/ Note that other git installs that don't include gitbash will cause the pre-commit & post-merge hooks to fail, negating many of the key benefits of this setup.
+
+Windows & Mac: Unity 2017 or newer. 
+  
 # Setup Instructions
 
 ## Configure Unity for Git
@@ -36,7 +44,7 @@ This process has 4 phases. Please make sure to complete all 4 before starting wo
 
 ## Create and Configure Your Repo 
 
-1. Create a new github repo with the same name as your unity project. Don't select the default unity .gitignore, we'll be importing our own a the subsequent step.
+1. Create a new github repo with the same name as your unity project. Don't select the default unity .gitignore, we'll be importing our own later.
 
 2. Clone the repo to the unity project folder you created in "Configure Unity for Git".
 
@@ -75,7 +83,7 @@ This process has 4 phases. Please make sure to complete all 4 before starting wo
 
 2. Add them to your repo.
 
-3. Help them clone the repo, as well as download & copy the `pre-commit` & `post-merge` scripts into `/.git/hooks/` (step 3 of Create & Configure Your Repo, above).
+3. Help them clone the repo, as well as download & copy the `pre-commit` & `post-merge` scripts into `/.git/hooks/` (step 3 of Create & Configure Your Repo, above). Also have them download & setup the .gitconfig file for their system (step 4-5 of Create & Configure Your Repo).
 
 # Usage and Errors
 
