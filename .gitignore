@@ -1,5 +1,7 @@
+# ignore git config as it will be differ across clients
 .gitconfig
 
+# unity generated folders
 library/
 temp/
 obj/
@@ -15,6 +17,7 @@ Builds/
 Logs/
 Bin/
 
+# erroneous meta files 
 library.meta
 temp.meta
 obj.meta
@@ -37,6 +40,7 @@ Bin.meta
 # Ignore Jetbrains Plugin
 Assets/Plugins/Editor/JetBrains.meta
 Assets/Plugins/Editor/JetBrains/*
+JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta
 assets/Plugins/Editor/JetBrains.meta
 assets/Plugins/Editor/JetBrains/*
 
