@@ -1,6 +1,7 @@
 <div style="align:center"><img src ="https://github.com/NYUGameCenter/Unity-Git-Config/blob/master/NYU_GameCenter_Logo_Formatted_Thin.png"></div>
 
 # Unity Github Config
+- [Prerequisites](#prerequisites)
 - [Setup Instructions](#setup-instructions)
 - [Usage and Errors](#usage-and-errors)
 - [Additional Information](#additional-information)
