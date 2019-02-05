@@ -15,10 +15,10 @@ This process has 4 phases. Please make sure to complete all 4 before starting wo
 
 # Prerequisites
 
-Mac: Git installed either through Xcode command line tools, or from here: http://git-scm.com/download/mac
-Windows: Git installed using GitForWindows: https://gitforwindows.org/ Note that other git installs that don't include gitbash will cause the pre-commit & post-merge hooks to fail, negating many of the key benefits of this setup.
+Unity 2017 or newer. 
 
-Windows & Mac: Unity 2017 or newer. 
+* Mac: Git installed either through Xcode command line tools, or from here: http://git-scm.com/download/mac
+* Windows: Git installed using GitForWindows: https://gitforwindows.org/ Note that other windows git installs that don't include gitbash will cause the pre-commit & post-merge hooks to fail, negating many of the key benefits of this setup.
   
 # Setup Instructions
 
