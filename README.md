@@ -72,7 +72,7 @@ Unity 2017 or newer.
 
 ## Install GitLFS 
 
-1. Download & install from https://git-lfs.github.com/
+1. Download & install git-lfs from https://git-lfs.github.com/. If you've already installed git-lfs, proceed to step 2.
 
 2. Open a command prompt, terminal, or gitbash window. 
 
