@@ -102,7 +102,7 @@ If you try to commit an asset without a corresponding metafile, you'll see an er
 
 Resolve this error by adding the corresponding .meta file to your commit.
 
-## Failure to add Corresponding Metafile to Gitignore
+## Failure to Add Corresponding Metafile to Gitignore
 
 If you add a file or folder to the .gitignore, but don't add the corresponding .meta to your .gitignore, you'll see an error like this one:
 
