@@ -32,6 +32,12 @@ Bin.meta
 # Never ignore Asset meta data
 ![Aa]ssets/**/*.meta
 
+# Ignore Jetbrains Plugin
+Assets/Plugins/Editor/JetBrains.meta
+Assets/Plugins/Editor/JetBrains/*
+assets/Plugins/Editor/JetBrains.meta
+assets/Plugins/Editor/JetBrains/*
+
 # comment these out if you wish to commit the asset store tools plugins
 assets/AssetStoreTools*
 Assets/AssetStoreTools*
