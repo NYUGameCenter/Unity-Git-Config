@@ -76,6 +76,42 @@ This process has 4 phases. Please make sure to complete all 4 before starting wo
 
 3. Help them clone the repo, as well as download & copy the `pre-commit` & `post-merge` scripts into `/.git/hooks/` (step 3 of Create & Configure Your Repo, above).
 
+# Usage and Errors
+
+Now that you have these hooks installed, they'll automatically stop you if you try to commit files that might mess up your project. There are a few ways this can happen.
+
+## Attempt to Commit File >100MB
+If you try to commit a file that's bigger than 100MB, you'll see an error like this one:
+
+>Commit failed with error
+>			0 files committed, 1 file failed to commit: testing
+>			Assets/big.pdf is over 100MB.
+>			Can't commit, fix errors first.
+
+Resolve this error by reducing the size of the file. For audio or visual assets, try splitting them into smaller parts or compressing them. For unity .scene files, try to reduce the scene size by dragging elements out of the scene and into prefabs.
+
+## Failure to Commit Metafile
+If you try to commit an asset without a corresponding metafile, you'll see an error like this one:
+
+>Commit failed with error
+>			0 files committed, 1 file failed to commit: testing
+>			Error: Missing meta file.
+>			Asset `Assets/LensFlare.flare` is added, but `Assets/LensFlare.flare.meta` is not in the git index.
+>			Please add `Assets/LensFlare.flare.meta` to git as well.
+
+Resolve this error by adding the corresponding .meta file to your commit.
+
+## Failure to add Corresponding Metafile to Gitignore
+
+If you add a file or folder to the .gitignore, but don't add the corresponding .meta to your .gitignore, you'll see an error like this one:
+
+>Commit failed with error
+>			0 files committed, 3 files failed to commit: testing
+>			LensFlare.flare
+>			LensFlare.flare found in .gitignore but not the corresponding meta file! Please add LensFlare.flare.meta to .gitignore
+
+Resolve this error by editing your .gitignore by adding the .meta file to it.
+
 # Additional Information
 
 Want more info? Here's some of the docs & posts we read when building these: 
