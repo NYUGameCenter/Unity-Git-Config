@@ -85,8 +85,11 @@ Now that you have these hooks installed, they'll automatically stop you if you t
 If you try to commit a file that's bigger than 100MB, you'll see an error like this one:
 
 >Commit failed with error
+
 >			0 files committed, 1 file failed to commit: testing
->			Assets/big.pdf is over 100MB.
+
+>			`Assets/big.pdf` is over 100MB.
+
 >			Can't commit, fix errors first.
 
 Resolve this error by reducing the size of the file. For audio or visual assets, try splitting them into smaller parts or compressing them. For unity .scene files, try to reduce the scene size by dragging elements out of the scene and into prefabs.
@@ -96,8 +99,11 @@ If you try to commit an asset without a corresponding metafile, you'll see an er
 
 >Commit failed with error
 >			0 files committed, 1 file failed to commit: testing
+
 >			Error: Missing meta file.
+
 >			Asset `Assets/LensFlare.flare` is added, but `Assets/LensFlare.flare.meta` is not in the git index.
+
 >			Please add `Assets/LensFlare.flare.meta` to git as well.
 
 Resolve this error by adding the corresponding .meta file to your commit.
@@ -107,9 +113,12 @@ Resolve this error by adding the corresponding .meta file to your commit.
 If you add a file or folder to the .gitignore, but don't add the corresponding .meta to your .gitignore, you'll see an error like this one:
 
 >Commit failed with error
+
 >			0 files committed, 3 files failed to commit: testing
->			LensFlare.flare
->			LensFlare.flare found in .gitignore but not the corresponding meta file! Please add LensFlare.flare.meta to .gitignore
+
+>			`LensFlare.flare`
+
+>			`LensFlare.flare` found in .gitignore but not the corresponding meta file! Please add `LensFlare.flare.meta` to .gitignore
 
 Resolve this error by editing your .gitignore by adding the .meta file to it.
 
