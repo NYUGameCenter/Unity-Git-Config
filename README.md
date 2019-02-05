@@ -2,6 +2,7 @@
 
 # Unity Git Config
 - [Setup Instructions](#setup-instructions)
+- [Usage and Errors](#usage-and-errors)
 - [Additional Information](#additional-information)
 
 We've put together some git configuration files to cover the majority of Unity/Git use cases. If you set these up at the start, they should prevent your repos from filling up with cruft. These config files ensure that all large files are tracked by git lfs & that your changes are diff'd appropriately, while the pre-commit/post-merge hooks ensure that meta files stay properly in sync.
