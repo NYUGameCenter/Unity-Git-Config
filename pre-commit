@@ -26,7 +26,8 @@ HAS_ERROR=""
 COMMIT_TEXT=$(git diff --cached --name-only | sort | uniq)
 SAVEIFS=$IFS
 
-IFS=$(echo -en "\n\b")
+IFS="
+"
 for file in $COMMIT_TEXT; do
 	file_size=$(du -m $CURRENT_DIR/$file | awk '{print $1}')
 	if [ "$file_size" -ge 100 ]; then
