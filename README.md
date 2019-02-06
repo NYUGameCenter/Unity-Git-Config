@@ -1,7 +1,7 @@
 <div style="align:center"><img src ="https://github.com/NYUGameCenter/Unity-Git-Config/blob/master/NYU_GameCenter_Logo_Formatted_Thin.png"></div>
 
 # Unity Github Config
-- [Primer](#primer)
+- [Git Primer](#git-primer)
 - [Prerequisites](#prerequisites)
 - [Setup Instructions](#setup-instructions)
 - [Usage and Errors](#usage-and-errors)
@@ -16,7 +16,7 @@ This process has 4 phases. Please make sure to complete all 4 before starting wo
   3. [Install GitLFS](#install-gitlfs)
   4. [Invite Teammates](#invite-teammates)
 
-# Primer
+# Git Primer
 
 Want a primer on git?
 
