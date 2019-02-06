@@ -1,9 +1,11 @@
 <div style="align:center"><img src ="https://github.com/NYUGameCenter/Unity-Git-Config/blob/master/NYU_GameCenter_Logo_Formatted_Thin.png"></div>
 
 # Unity Github Config
+- [Primer](#primer)
 - [Prerequisites](#prerequisites)
 - [Setup Instructions](#setup-instructions)
 - [Usage and Errors](#usage-and-errors)
+- [Troubleshooting](#troubleshooting)
 - [Additional Information](#additional-information)
 
 We've put together some git configuration files to cover the majority of Unity/Git use cases. If you set these up at the start, they should prevent your repos from filling up with cruft. These config files ensure that all large files are tracked by git lfs & that your changes are diff'd appropriately, while the pre-commit/post-merge hooks ensure that meta files stay properly in sync. They also insure you against accidentally trying to upload a >100mb file to github, and ending up with a sad unresolvable local repo.
@@ -13,6 +15,20 @@ This process has 4 phases. Please make sure to complete all 4 before starting wo
   2. [Create and Configure Your Repo](#create-and-configure-your-repo)
   3. [Install GitLFS](#install-gitlfs)
   4. [Invite Teammates](#invite-teammates)
+
+# Primer
+
+Want a primer on git?
+
+ * [Git, the simple guide](http://rogerdudler.github.io/git-guide/) - A very simple primer
+ * [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/) - A command-oriented, more extensive git primer
+ * [Swarthmore Git Intro](https://www.cs.swarthmore.edu/help/git/) - A more conceptually-driven git primer
+ 
+How about a cheatsheet?
+
+ * [NDP's Cheatsheet](http://www.ndpsoftware.com/git-cheatsheet.html)
+ * [Rogerdudler's Cheatsheet](https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf)
+ * [GitHub's Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
 
 # Prerequisites
 
@@ -134,16 +150,6 @@ Did everything above & still managed to run into a problem? Here are some of the
  * [git-lfs Troubleshooting](https://github.com/git-lfs/git-lfs/wiki/Troubleshooting) - Common issues folks run into while using git-lfs
 
 # Additional Information
-
-Want a primer on git?
-
- * [Git, the simple guide](http://rogerdudler.github.io/git-guide/) - A very simple primer
- * [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/) - A command-oriented, more extensive git primer
- * [Swarthmore Git Intro](https://www.cs.swarthmore.edu/help/git/) - A more conceptually-driven git primer
- 
-How about a cheatsheet?
-
- * [NDP's Cheatsheet](http://www.ndpsoftware.com/git-cheatsheet.html)
 
 Want more info on how we built these config files & hooks? Here's some of the docs & posts we read when building this: 
  
