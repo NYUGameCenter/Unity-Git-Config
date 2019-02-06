@@ -124,9 +124,29 @@ If you add a file or folder to the .gitignore, but don't add the corresponding .
 
 Resolve this error by editing your .gitignore by adding the .meta file to it.
 
+# Troubleshooting
+
+Did everything above & still managed to run into a problem? Here are some of the best resources for learning how to restore your repo. 
+
+ * [On undoing, fixing, or removing commits in git](https://sethrobertson.github.io/GitFixUm/fixup.html) - A choose-your-own-adventure style troubleshooter
+ * [Oh shit, git!](https://ohshitgit.com/) - Lots of common use cases, expressed simply & crassly
+ * [10 Common Git Problems](https://www.codementor.io/citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd) - Similar to the above, less crass
+ * [git-lfs Troubleshooting](https://github.com/git-lfs/git-lfs/wiki/Troubleshooting) - Common issues folks run into while using git-lfs
+
 # Additional Information
 
-Want more info? Here's some of the docs & posts we read when building these: 
+Want a primer on git?
+
+ * [Git, the simple guide](http://rogerdudler.github.io/git-guide/) - A very simple primer
+ * [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/) - A command-oriented, more extensive git primer
+ * [Swarthmore Git Intro](https://www.cs.swarthmore.edu/help/git/) - A more conceptually-driven git primer
+ 
+How about a cheatsheet?
+
+ * [NDP's Cheatsheet](http://www.ndpsoftware.com/git-cheatsheet.html)
+
+Want more info on how we built these config files & hooks? Here's some of the docs & posts we read when building this: 
+ 
   * http://www.gamasutra.com/blogs/TimPettersen/20161206/286981/The_complete_guide_to_Unity__Git.php 
   * http://www.edwardthomson.com/blog/git_with_unity.html
   * https://riptutorial.com/unity3d/example/7179/setting-up-a-git-repository-for-unity
