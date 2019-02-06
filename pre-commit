@@ -23,14 +23,18 @@ exec 1>&2
 # ensure that there's not a >100mb file in this checkin, which github won't allow
 CURRENT_DIR="$(pwd)"
 HAS_ERROR=""
+COMMIT_TEXT=$(git diff --cached --name-only | sort | uniq)
+SAVEIFS=$IFS
 
-for file in $(git diff --cached --name-only | sort | uniq); do
+IFS=$(echo -en "\n\b")
+for file in $COMMIT_TEXT; do
 	file_size=$(du -m $CURRENT_DIR/$file | awk '{print $1}')
 	if [ "$file_size" -ge 100 ]; then
 		echo "$file is over 100MB."
 		HAS_ERROR="1"
 	fi
 done
+IFS=$SAVEIFS
 
 if [ "$HAS_ERROR" != "" ]; then
     echo "Can't commit, fix errors first." >&2
