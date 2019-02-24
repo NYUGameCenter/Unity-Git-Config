@@ -35,7 +35,7 @@ How about a cheatsheet?
 
 ## Prerequisites
 
-Unity 2017 or newer. 
+Unity 2017 or newer. Tested up to Unity 2018.3.
 
 * Mac: Git installed either through Xcode command line tools, or from here: http://git-scm.com/download/mac
 * Windows: Git installed using GitForWindows: https://gitforwindows.org/ Note that other windows git installs that don't include gitbash will cause the pre-commit & post-merge hooks to fail, negating many of the key benefits of this setup.
