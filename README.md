@@ -142,7 +142,7 @@ If you add a file or folder to the .gitignore, but don't add the corresponding .
 
 Resolve this error by editing your .gitignore by adding the .meta file to it. 
 
-Never add .meta files to the .gitignore without also adding the file associated with that meta file to the .gitignore. Exercise caution when adding to your .gitignore: it's not a tool for resolving bad commits (see the troubleshooting section for help resolving commits). Adding files to your .gitignore will result in them not being backed up & nor shared with your collaborators.
+Always exercise caution when adding to your .gitignore: it's not a tool for resolving bad commits (see the [troubleshooting](#troubleshooting) section for help resolving issues with commits). Never add .meta files to the .gitignore without also adding the file associated with that meta file to the .gitignore. Adding files to your .gitignore will result in them not being backed up & nor shared with your collaborators. 
 
 # Troubleshooting
 
