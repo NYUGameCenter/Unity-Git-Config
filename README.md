@@ -23,6 +23,7 @@ Want a primer on git?
 
  * [Git, the simple guide](http://rogerdudler.github.io/git-guide/) - A very simple primer
  * [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/) - A command-oriented, more extensive git primer
+ * [Git on the Command Line](https://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html) - a command line git primer
  * [Swarthmore Git Intro](https://www.cs.swarthmore.edu/help/git/) - A more conceptually-driven git primer
  
 How about a cheatsheet?
