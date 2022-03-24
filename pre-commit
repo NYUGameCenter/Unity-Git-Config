@@ -110,6 +110,7 @@ if [ "$ret" != 0 ]; then
 	exit "$ret"
 fi
 
+## Check if changes to .gitignore include corresponding meta files.
 # check if staged files contain .gitignore
 if [ ! `git diff --name-only --cached | grep -- "\.gitignore"` ]; then
 	# avoid expensive diff actions if there is no change in .gitignore
@@ -117,9 +118,9 @@ if [ ! `git diff --name-only --cached | grep -- "\.gitignore"` ]; then
 fi
 
 # new lines have the format {+xxxxx+}. Ignore comments
-raw_diff_output=`git diff --cached --word-diff=plain .gitignore | egrep  "\{\+[^#].*\+\}"`
+raw_diff_output=`git diff --cached --word-diff=plain .gitignore | egrep -x "\{\+[^#.].*[^*]\+\}"`
 
-# prepare two strings: on for directories and one for meta files
+# prepare two strings: one for directories and one for meta files
 for raw_entry in $raw_diff_output; do
 	# strip leading and trailing separator "{+" and "+}"
 	if ((${#raw_entry} <= 4)); then
