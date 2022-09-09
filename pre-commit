@@ -110,27 +110,31 @@ if [ "$ret" != 0 ]; then
 	exit "$ret"
 fi
 
+## Check if changes to .gitignore include corresponding meta files.
 # check if staged files contain .gitignore
 if [ ! `git diff --name-only --cached | grep -- "\.gitignore"` ]; then
 	# avoid expensive diff actions if there is no change in .gitignore
 	exit 0
 fi
 
-# new lines have the format {+xxxxx+}
-raw_diff_output=`git diff --cached --word-diff=plain .gitignore | egrep  "\{\+.*\+\}"`
+# new lines have the format {+xxxxx+}. Ignore comments
+raw_diff_output=`git diff --cached --word-diff=plain .gitignore | egrep -x "\{\+[^#.].*[^*]\+\}"`
 
-# prepare two strings: on for directories and one for meta files
+# prepare two strings: one for directories and one for meta files
+IFS=$'\n'
+declare -a diff_output_dirs
+declare -a diff_output_metas
 for raw_entry in $raw_diff_output; do
 	# strip leading and trailing separator "{+" and "+}"
 	if ((${#raw_entry} <= 4)); then
 		continue
 	else
-		e=${raw_entry:2:$((${#raw_entry}-4))}
+		e="${raw_entry:2:$((${#raw_entry}-4))}"
 		is_meta=$((`echo $e | egrep ".*meta" | wc -l`))
 		if [ $is_meta -eq 0 ]; then
-			diff_output_dirs="${diff_output_dirs} ${e}"
+			diff_output_dirs+=("${e}")
 		else
-			diff_output_metas="${diff_output_metas} ${e}"
+			diff_output_metas+=("${e}")
 		fi
 	fi
 done
@@ -138,11 +142,15 @@ done
 # iterate over directories and check if there is an entry for the appropriate meta file
 for i in $diff_output_dirs; do 
 	# meta file entries are often without directory, so strip the path
-	dir_name=`echo $i | egrep -o "/[^/]+$" | cut -d / -f 2`
-	echo $dir_name
-	has_meta_ignore=$((`echo $diff_output_metas | grep -- "$dir_name.meta" | wc -l`))
+	base_name=`basename $i`
+	echo "$i"
+	has_meta_ignore=$((`echo $diff_output_metas | grep -F -- "$base_name.meta" | wc -l`))
 	if [ ${has_meta_ignore} -eq 0 ]; then
-		echo "$dir_name found in .gitignore but not the corresponding meta file! Please add ${dir_name}.meta to .gitignore"
+		# Check if the full path name meta is included.
+		has_meta_ignore=$((`echo $diff_output_metas | grep -F -- "${i%/}.meta" | wc -l`))
+	fi
+	if [ ${has_meta_ignore} -eq 0 ]; then
+		echo "${i} found in .gitignore but not the corresponding meta file! Please add ${i%/}.meta or ${base_name}.meta to .gitignore"
 		exit 1
 	fi
 done
